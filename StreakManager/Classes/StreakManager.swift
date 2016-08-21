@@ -61,7 +61,7 @@ public struct Streak {
     }
     
     static private func of(inKey key: String, dayToCheck: ((add: Int) -> NSDate)) -> Int{
-        guard let data = keychain.getData(key), var list = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [NSDate] else {
+        guard let data = keychain.getData(key), let list = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [NSDate] else {
             return 0
         }
         
@@ -70,7 +70,7 @@ public struct Streak {
             let checkDate = dayToCheck(add: -1 * streak)
             
             if savedDate == checkDate {
-                streak++
+                streak += 1
             } else {
                 return streak
             }
