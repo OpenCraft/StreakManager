@@ -1,0 +1,16 @@
+PODS:
+  - StreakManager (0.1.0)
+
+DEPENDENCIES:
+  - StreakManager (from `../`)
+
+EXTERNAL SOURCES:
+  StreakManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  StreakManager: 986f74fa6bd146f7ef413f7a661d0149e0ecc65f
+
+PODFILE CHECKSUM: bfc0e4a4f75c0618ed7e39c1e09ec68c97130b0e
+
+COCOAPODS: 1.0.1
