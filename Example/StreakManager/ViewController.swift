@@ -11,11 +11,14 @@ import StreakManager
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labelDays: UILabel!
+    @IBOutlet weak var labelWeeks: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("\(Streak.ofDays()) days using this app")
-        print("\(Streak.ofWeeks()) weeks using this app")
+        labelDays.text = "\(Streak.ofDays()) day(s) using this app"
+        labelWeeks.text = "\(Streak.ofWeeks()) week(s) using this app"
     }
 
 }

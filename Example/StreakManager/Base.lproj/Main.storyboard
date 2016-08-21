@@ -14,13 +14,45 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6W-zx-E6v">
+                                <rect key="frame" x="38" y="229" width="243" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dMF-8S-YQb"/>
+                                    <constraint firstAttribute="width" constant="243" id="drL-dM-8l8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODV-es-QTW">
+                                <rect key="frame" x="38" y="258" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K6W-zx-E6v" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="E67-mj-fr1"/>
+                            <constraint firstItem="ODV-es-QTW" firstAttribute="top" secondItem="K6W-zx-E6v" secondAttribute="bottom" constant="8" id="Hbv-vc-lEp"/>
+                            <constraint firstItem="K6W-zx-E6v" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="PoR-2q-MXR"/>
+                            <constraint firstItem="ODV-es-QTW" firstAttribute="height" secondItem="K6W-zx-E6v" secondAttribute="height" id="RG3-LD-DVI"/>
+                            <constraint firstItem="ODV-es-QTW" firstAttribute="centerX" secondItem="K6W-zx-E6v" secondAttribute="centerX" id="ZAS-6e-Oy5"/>
+                            <constraint firstItem="ODV-es-QTW" firstAttribute="width" secondItem="K6W-zx-E6v" secondAttribute="width" id="hb0-jS-b3s"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="labelDays" destination="K6W-zx-E6v" id="tPX-Ag-neb"/>
+                        <outlet property="labelWeeks" destination="ODV-es-QTW" id="dDc-zQ-ixj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="233"/>
         </scene>
     </scenes>
 </document>
