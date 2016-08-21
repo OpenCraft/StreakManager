@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StreakManager_Example' do
+  pod 'StreakManager', :path => '../'
+
+  target 'StreakManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
