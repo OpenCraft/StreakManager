@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "StreakManager/Classes/**/*"
+  "source_files": "StreakManager/Classes/**/*",
+  "dependencies": {
+    "SwiftDate": [
+      "~> 3.0.8"
+    ]
+  }
 }

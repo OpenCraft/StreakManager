@@ -1,5 +1,7 @@
 PODS:
-  - StreakManager (0.1.0)
+  - StreakManager (0.1.0):
+    - SwiftDate (~> 3.0.8)
+  - SwiftDate (3.0.8)
 
 DEPENDENCIES:
   - StreakManager (from `../`)
@@ -9,7 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  StreakManager: 986f74fa6bd146f7ef413f7a661d0149e0ecc65f
+  StreakManager: 0a2b0e33f904ca060e12713f32b44cc4df934b7f
+  SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
 
 PODFILE CHECKSUM: bfc0e4a4f75c0618ed7e39c1e09ec68c97130b0e
 
